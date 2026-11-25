@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>灶火小馆 · Hearthside Kitchen</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #2b1d18;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  #wrap {
+    text-align: center;
+    padding: 12px;
+  }
+  canvas {
+    display: block;
+    max-width: min(1280px, 96vw);
+    max-height: calc(96vh - 40px);
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+    background: #f3e2c7;
+  }
+  p {
+    color: #d7ccc8;
+    font-size: 14px;
+    margin: 10px 0 0;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <p>WASD / 方向键移动 · E 互动 · 点击站点走过去 · M 静音 · Enter 开始</p>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
